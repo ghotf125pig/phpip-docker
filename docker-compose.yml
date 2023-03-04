@@ -1,0 +1,21 @@
+version: "3"
+services:
+  mysql:
+    ports:
+      - "3307:3306"
+    build: './build/mysql'
+    environment:
+      MYSQL_ROOT_PASSWORD: "super-secret-password"
+      MYSQL_DATABASE: "phpip"
+    volumes:
+      - dbData:/var/lib/mysql
+      - ./script:/script
+  php-apache:
+    ports:
+      - "81:80"
+    build: './build/php'
+    volumes:
+      - ./app/phpip:/var/www/html
+      -  /var/www/phpip/vendor
+volumes:
+  dbData:
