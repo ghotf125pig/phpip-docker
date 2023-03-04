@@ -11,7 +11,7 @@ It uses:
 - mysql (latest)
 
 # Usage
-The installation instructions are on the [phpip wiki](https://github.com/jjdejong/phpip/wiki/Docker installation.md)
+The installation instructions are on the [phpip wiki](https://github.com/jjdejong/phpip/wiki/Docker-installation)
 
 # Disclaimer
 This is not written by an expert, thus security has not been proof. Use it at your own risks.
