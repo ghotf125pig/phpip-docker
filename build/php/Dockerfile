@@ -1,4 +1,4 @@
-FROM php:8.1-apache
+FROM php:8.3-apache
 
 RUN apt-get update -y && \
     apt-get install -y unzip git libedit-dev libxml2-dev libzip-dev libonig-dev libcurl4-openssl-dev && \

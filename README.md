@@ -7,7 +7,7 @@ This repository gives files to create and launch the application as a docker mac
 It uses:
 
 - a Debian machine
-- php 8.1
+- php 8.2
 - mysql (latest)
 
 # Usage

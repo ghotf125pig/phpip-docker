@@ -7,6 +7,8 @@ Getting phpIP from GitHub
 cd /var/www/html
 git clone https://github.com/jjdejong/phpip.git phpip 
 cp .env.docker phpip/.env
+mv init_db.php phpip
+mv install-phpip-docker.sh phpip
 echo "
 ********************************
 Configuring MySQL
