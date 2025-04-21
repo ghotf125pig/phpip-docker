@@ -1,7 +1,7 @@
 FROM php:8.3-apache
 
 RUN apt-get update -y && \
-    apt-get install -y unzip git libedit-dev libxml2-dev libzip-dev libonig-dev libcurl4-openssl-dev && \
+    apt-get install -y unzip git libedit-dev libxml2-dev libzip-dev libonig-dev libcurl4-openssl-dev mysql-client && \
     docker-php-ext-install pdo pdo_mysql xml zip mbstring curl
 
 ENV COMPOSER_HOME /composer
