@@ -20,7 +20,8 @@ echo "
 ********************************
 Installing dependencies
 ********************************"
-composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+#composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+composer config -g repo.packagist composer https://mirrors.cloud.tencent.com/composer/
 composer install
 php artisan key:generate
 php artisan config:clear
