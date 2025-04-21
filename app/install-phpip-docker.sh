@@ -13,13 +13,14 @@ echo "
 ********************************
 Configuring MySQL
 ********************************"
+cd phpip
 php init_db.php
 
 echo "
 ********************************
 Installing dependencies
 ********************************"
-cd phpip
+composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 composer install
 php artisan key:generate
 php artisan config:clear
